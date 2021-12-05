@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Стили</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    </head>
+    <body>
+        <form action="" method="post">
+            <ul>
+              <li>
+                <label for="meeting_date">Meeting date:<br></label>                
+                <select id="meeting_date" name="meeting_date">
+                  <option>01/12/2021</option>
+                  <option>10/12/2021</option>
+                  <option>17/12/2021</option>
+                </select>
+              </li>
+              <li>
+                <label for="mail">Mail:<br></label>
+                <input type="email" id="mail" name="mail">
+              </li>
+              <li>
+                <label for="name">Name:<br></label>
+                <input type="text" id="name" name="name">
+              </li>
+              <li>
+                <label for="phone">Phone:<br></label>
+                <input type="tel" id="phone" name="phone">
+              </li><br>
+              <li>                
+                <button type="submit">Send your message</button>
+              </li>
+            </ul>
+          </form>
+    </body>
+</html>
